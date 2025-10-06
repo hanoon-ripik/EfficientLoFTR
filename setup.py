@@ -29,7 +29,18 @@ setup(
         "Documentation": "https://zju3dv.github.io/efficientloftr",
         "Paper": "https://zju3dv.github.io/efficientloftr/files/EfficientLoFTR.pdf",
     },
-    packages=find_packages(where="src"),
+    packages=[
+        "loftr",
+        "loftr.backbone", 
+        "loftr.loftr_module",
+        "loftr.utils",
+        "lightning",
+        "datasets",
+        "losses",
+        "optimizers",
+        "utils",
+        "config"
+    ],
     package_dir={"": "src"},
     classifiers=[
         "Development Status :: 4 - Beta",
