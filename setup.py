@@ -6,6 +6,6 @@ with open("requirements.txt", "r", encoding="utf-8") as fh:
 setup(
     name="EfficientLoFTR",
     version="1.0.0",
-    packages=["EfficientLoFTR"] + [f"EfficientLoFTR.{pkg}" for pkg in find_packages()],
+    packages=find_packages(),
     install_requires=requirements,
 )
